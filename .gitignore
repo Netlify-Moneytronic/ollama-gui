@@ -30,3 +30,5 @@ package-lock.json
 .aider*
 
 ollama_data/
+# Local Netlify folder
+.netlify
