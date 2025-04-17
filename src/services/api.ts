@@ -112,7 +112,7 @@ export type GenerateEmbeddingsResponse = {
 
 // Define a method to get the full API URL for a given path
 const getApiUrl = (path: string) =>
-  `${baseUrl.value || 'http://localhost:11434/api'}${path}`
+  `${baseUrl.value || 'https://devserver-main--netlify-ollama-gui.netlify.app/api'}${path}`
 
 const abortController = ref<AbortController>(new AbortController())
 const signal = ref<AbortSignal>(abortController.value.signal)
