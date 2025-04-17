@@ -8,6 +8,7 @@ async function readAll(readable) {
 }
 
 export default async (req, context) => {
+    try {
     // Read and parse the request body
     const rawData = await readAll(req.body);
     const json = JSON.parse(rawData);
@@ -22,6 +23,14 @@ export default async (req, context) => {
     })
 
     return res;
+    } catch(ex) {
+        console.error(ex);
+        return new Response(JSON.stringify({ error: ex }), {
+            headers: { 'Content-Type': 'application/json' },
+            status: 500
+        });
+    }
+
 };
 
 export const config = {
