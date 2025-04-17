@@ -7,7 +7,9 @@ export default defineConfig({
   // Shh....
   build: { chunkSizeWarningLimit: 1500 },
   server: {
-    cors: true,
-    allowedHosts: ['.netlify.app'],
+    cors: true
+  },
+  preview: {
+    cors: true
   }
 })
