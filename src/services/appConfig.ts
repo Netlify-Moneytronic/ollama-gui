@@ -12,7 +12,7 @@ export const avatarUrl = computed(() => gravatarEmail.value
 )
 export const enableMarkdown = useLocalStorage('markdown', true)
 export const showSystem = useLocalStorage('systemMessages', true)
-export const baseUrl = useLocalStorage('baseUrl', 'http://localhost:11434/api')
+export const baseUrl = useLocalStorage('baseUrl', 'https://devserver-main--netlify-ollama-gui.netlify.app/api')
 export const isDarkMode = useLocalStorage('darkMode', true)
 export const isSettingsOpen = useLocalStorage('settingsPanelOpen', true)
 export const isSystemPromptOpen = useLocalStorage('systemPromptOpen', false)
