@@ -3,7 +3,7 @@ import gravatarUrl from 'gravatar-url'
 import { computed } from 'vue'
 import { Config, db } from './database'
 
-export const currentModel = useLocalStorage('currentModel', 'none')
+
 export const gravatarEmail = useLocalStorage('gravatarEmail', '')
 export const historyMessageLength = useLocalStorage('historyMessageLength', 10)
 export const avatarUrl = computed(() => gravatarEmail.value
@@ -13,6 +13,7 @@ export const avatarUrl = computed(() => gravatarEmail.value
 export const enableMarkdown = useLocalStorage('markdown', true)
 export const showSystem = useLocalStorage('systemMessages', true)
 export const baseUrl = useLocalStorage('baseUrl', 'https://devserver-main--netlify-ollama-gui.netlify.app/api')
+export const currentModel = useLocalStorage('currentModel', 'llama3.2:latest')
 export const isDarkMode = useLocalStorage('darkMode', true)
 export const isSettingsOpen = useLocalStorage('settingsPanelOpen', true)
 export const isSystemPromptOpen = useLocalStorage('systemPromptOpen', false)
