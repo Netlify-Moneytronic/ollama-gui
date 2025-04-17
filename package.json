@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
-    "dev-test": "sh setup.sh && sh run.sh && vite --host 0.0.0.0",
+    "dev-test": "vite --host 0.0.0.0",
+    "dev": "sh setup.sh && sh run.sh && vite --host 0.0.0.0",
     "local-dev": "vite --host 0.0.0.0",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
